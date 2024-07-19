@@ -13,17 +13,12 @@ config_version=5
 config/name="Pirate Software Game Jam 15"
 run/main_scene="res://Scenes/game_scene.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="res://Art/icon.svg"
 
 [display]
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
-
-[filesystem]
-
-import/blender/enabled=false
-import/fbx/enabled=false
 
 [filesystem]
 
