@@ -1,0 +1,31 @@
+{
+  "UnderCoverGuardGeneric": {
+    "1": "Got any... Goblins?",
+    "2": "Ever met Greg? Stand up guy."
+  },
+  "Assassin": {
+    "1": "knife is pronounced 'kuh-nif-i'",
+    "2": "I should know.",
+    "3": "I'm mr. knife man, after all"
+  },
+  "Noble": {
+    "1": "bluh bluj",
+    "2": "I'm a noble",
+    "3": "why is a noble here?",
+    "4": "why not."
+  },
+  "DarkMageGeneric": {
+    "1": "I need more SKULLS",
+    "2": "Do you have any SKULLS?",
+    "3": "I would like to buy all your SKULLS."
+  },
+  "MinionGeneric": {
+    "1": "Please make it quick... The boss punishes me if i take too long...",
+    "2": "This is... A special order... I, might not come around again."
+  },
+  "GoonGeneric": {
+    "1": "Here to get an order for the Boss",
+    "2": "Love the Boss. Great guy.",
+    "3": "It's all about the mets baby! Ah yeah, let's go mets! Love the mets!"
+  }
+}
