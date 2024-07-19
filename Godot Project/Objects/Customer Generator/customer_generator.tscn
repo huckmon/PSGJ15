@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpia7j7yuj6kn"]
+
+[ext_resource type="Script" path="res://Objects/Customer Generator/customer_generator.gd" id="1_skjlj"]
+[ext_resource type="Script" path="res://Objects/Customer Generator/customerTypes.gd" id="2_86bm7"]
+
+[node name="Customer Generator" type="Node"]
+script = ExtResource("1_skjlj")
+custTypes = ExtResource("2_86bm7")
