@@ -1,6 +1,7 @@
 #class_name CustomerTypes
 extends Resource
 
+# Array of all professions...
 const profession: Array = [
 	"UnderCoverGuard",
 	"Assassin",
@@ -10,7 +11,7 @@ const profession: Array = [
 	"Goon"
 	]
 
-# For now, any race can have any profession. Racism comes after MVP
+# Array of all races...
 const race: Array = [
 	"Imp",
 	"Skeleton",
