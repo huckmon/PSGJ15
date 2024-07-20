@@ -48,3 +48,12 @@ func _on_character_name_received(charName):
 func _input(event):
 	if event.is_action_pressed("ui_accept"):
 		display_Line(curChar, lineList.pop_front())
+
+# The actual function for receiving a character's details
+# Given how this is designed, we can in future actually change from giving just a "name", (which is actually an array of race + profession
+# , I don't know why i called it "name") to giving a full slew of greater details.
+func _on_customer_generator_customer_type(name):
+	curChar = dialDict[name[0]]
+	lineList = curChar.keys()
+	show()
+	display_Line(curChar, lineList.pop_front())
