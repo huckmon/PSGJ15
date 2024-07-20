@@ -15,3 +15,6 @@ func _physics_process(delta): # physics function is used to detect if the object
 		global_position = lerp(global_position, get_global_mouse_position(), 25 * delta)
 	if !selected:
 		global_position = global_position
+
+func destroy_knife(): # function is used to be destroy knife 
+	queue_free()

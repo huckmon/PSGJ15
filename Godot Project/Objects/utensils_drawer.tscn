@@ -1,17 +1,17 @@
 [gd_scene load_steps=4 format=3 uid="uid://dards2t3hpsk3"]
 
+[ext_resource type="Script" path="res://Scripts/utensils_drawer.gd" id="1_idw68"]
 [ext_resource type="Texture2D" uid="uid://d3ppr47bq63r" path="res://Art/drawer_test.png" id="1_iob3d"]
-[ext_resource type="PackedScene" uid="uid://bx1lwnp86gbo2" path="res://Objects/knife_utensil.tscn" id="2_0u44v"]
-[ext_resource type="PackedScene" uid="uid://bkwky22sm8mq7" path="res://Objects/mortar_utensil.tscn" id="3_66lqk"]
+[ext_resource type="PackedScene" uid="uid://b0dk7i323avv5" path="res://Objects/canvas_utensil_knife.tscn" id="2_nnffh"]
 
 [node name="utensils_drawer" type="Node2D"]
+script = ExtResource("1_idw68")
 
 [node name="drawer_sprite" type="Sprite2D" parent="."]
 position = Vector2(126, 360)
 texture = ExtResource("1_iob3d")
 
-[node name="knife_utensil" parent="." instance=ExtResource("2_0u44v")]
-position = Vector2(186, 96)
+[node name="canvas_utensil_knife" parent="." instance=ExtResource("2_nnffh")]
+position = Vector2(186, 97)
 
-[node name="mortar_utensil" parent="." instance=ExtResource("3_66lqk")]
-position = Vector2(71, 99)
+[connection signal="spawn_knife" from="canvas_utensil_knife" to="." method="_on_canvas_utensil_knife_spawn_knife"]
