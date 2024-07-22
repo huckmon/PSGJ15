@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://Scenes/Production Scene/destructor.gd" id="1_kw6o1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4q6rg"]
-size = Vector2(124, 124)
+size = Vector2(70, 70)
 
 [node name="destructor" type="Node2D"]
 script = ExtResource("1_kw6o1")
