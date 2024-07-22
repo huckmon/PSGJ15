@@ -19,5 +19,4 @@ texture = ExtResource("2_kquun")
 shape = SubResource("CircleShape2D_gn2dr")
 
 [connection signal="area_entered" from="Sprite2D/Area2D" to="." method="_on_area_2d_area_entered"]
-[connection signal="body_entered" from="Sprite2D/Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="input_event" from="Sprite2D/Area2D" to="." method="_on_area_2d_input_event"]

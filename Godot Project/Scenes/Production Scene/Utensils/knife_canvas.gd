@@ -24,7 +24,7 @@ func _on_area_2d_mouse_exited(): # detects if mouse stops hovering over area2d
 func _on_area_2d_input_event(viewport, event, shape_idx):
 	# Function detects when the mouse is clicked on the collision2d collider attached to the area2d module
 	if Input.is_action_just_pressed("Click") && !knife_out:
-		ProductionSimpleton.canvas_utensil_knife_global_pos = global_position
+		ProductionSimpleton.canvas_knife_globalpos = global_position
 		knife_out = true # sets the value of knife_out to null
 		spawn_knife.emit() # sends a signal to spawn a knife to the production_scene
 		print("knife spawned")

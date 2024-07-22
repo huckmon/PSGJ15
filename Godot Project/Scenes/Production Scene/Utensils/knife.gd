@@ -16,5 +16,7 @@ func _physics_process(delta): # physics function is used to detect if the object
 	if !selected:
 		global_position = global_position
 
-func destroy_knife(): # function is used to be destroy knife 
-	queue_free()
+func _on_area_2d_area_entered(area):
+	if area.name == "destructor":
+		print("knife deleted")
+		queue_free()

@@ -19,15 +19,7 @@ func _physics_process(delta): # physics function is used to detect if the object
 func destroy_red_potion(): # function is used to be destroy knife 
 	queue_free()
 
-func _on_area_2d_body_entered(body):
-	print("potion touching")
-	if body.has_method("destructor"):
-		print("potion destructor")
-		queue_free()
-
-
-func _on_area_2d_area_entered(area):
-	print("potion touching area")
+func _on_area_2d_area_entered(area): # function destroys the red_potion if it's touching an area2d named "destructor". very rough solution
 	if area.name == "destructor":
-		print("potion destructor area")
+		print("red potion deleted")
 		queue_free()
