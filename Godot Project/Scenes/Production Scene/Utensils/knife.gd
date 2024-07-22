@@ -17,6 +17,10 @@ func _physics_process(delta): # physics function is used to detect if the object
 		global_position = global_position
 
 func _on_area_2d_area_entered(area):
-	if area.name == "destructor":
+	
+	# NOTE I need to move to a system where the items are deleted only if the player stops holding them
+	# this can probably be achieved by using the on_area2d_entered to store a bool instead of destroying them on entry, then calling function to check if !selected and on_destructor = true
+	
+	if area.name == "destructor": # destroys the knife if it enters the destructor
 		print("knife deleted")
 		queue_free()

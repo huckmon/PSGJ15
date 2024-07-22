@@ -19,7 +19,14 @@ func _physics_process(delta): # physics function is used to detect if the object
 func destroy_red_potion(): # function is used to be destroy knife 
 	queue_free()
 
-func _on_area_2d_area_entered(area): # function destroys the red_potion if it's touching an area2d named "destructor". very rough solution
-	if area.name == "destructor":
+func _on_area_2d_area_entered(area): # function destroys the red_potion if it's touching a named area2d. very rough solution
+	
+	# NOTE I need to move to a system where the items are deleted only if the player stops holding them
+	# this can probably be achieved by using the on_area2d_entered to store a bool instead of destroying them on entry, then calling function to check if !selected and on_destructor = true
+	
+	if area.name == "destructor": # if the destructor is touching, delete this
 		print("red potion deleted")
+		queue_free()
+	elif area.name == "storer": # destroys if touching storer
+		print("potion stored - or at least pretend it is")
 		queue_free()
