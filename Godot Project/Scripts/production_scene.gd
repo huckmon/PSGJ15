@@ -11,3 +11,4 @@ func _on_utensil_drawer_button_on_button_press():
 func _on_utensils_drawer_spawn_knife_drawer():
 	var knife_instance = knife.instantiate()
 	add_child(knife_instance)
+	knife_instance.global_position = Utensils.canvas_utensil_knife_global_pos # BUG the knife doesn't allow itself to be dragged upon spawning, try reversing behaviour in knife_utensil

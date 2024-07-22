@@ -1,1 +1,3 @@
 extends Node
+
+var canvas_utensil_knife_global_pos

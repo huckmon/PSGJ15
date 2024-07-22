@@ -7,6 +7,7 @@
 radius = 50.0
 
 [node name="knife_utensil" type="Node2D"]
+scale = Vector2(1.2, 1.2)
 script = ExtResource("1_245tk")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
