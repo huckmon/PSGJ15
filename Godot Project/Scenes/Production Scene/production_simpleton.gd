@@ -1,0 +1,7 @@
+extends Node
+
+var canvas_utensil_knife_global_pos
+var canvas_utensil_bowl_global_pos
+
+var canvas_red_potion_globalpos
+var canvas_blue_potion_globalpos

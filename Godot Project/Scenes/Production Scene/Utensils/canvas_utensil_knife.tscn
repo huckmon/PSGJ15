@@ -1,17 +1,17 @@
 [gd_scene load_steps=5 format=3 uid="uid://b0dk7i323avv5"]
 
-[ext_resource type="Script" path="res://Scenes/Production Scene/canvas_utensil_template.gd" id="1_2tknn"]
-[ext_resource type="Texture2D" uid="uid://p744m2qa3b84" path="res://Art/knife_utensil_test.png" id="1_mn7q5"]
-[ext_resource type="Texture2D" uid="uid://d3pxmc8yfj8tp" path="res://Art/white_layer.png" id="3_1d2h1"]
+[ext_resource type="Script" path="res://Scenes/Production Scene/Utensils/canvas_utensil_knife.gd" id="1_y42s3"]
+[ext_resource type="Texture2D" uid="uid://p744m2qa3b84" path="res://Art/knife_utensil_test.png" id="2_6jvvo"]
+[ext_resource type="Texture2D" uid="uid://d3pxmc8yfj8tp" path="res://Art/white_layer.png" id="3_yey0o"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_hr4qb"]
 radius = 60.0
 
 [node name="canvas_utensil_knife" type="Node2D"]
-script = ExtResource("1_2tknn")
+script = ExtResource("1_y42s3")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_mn7q5")
+texture = ExtResource("2_6jvvo")
 
 [node name="Area2D" type="Area2D" parent="Sprite2D"]
 
@@ -21,7 +21,7 @@ shape = SubResource("CircleShape2D_hr4qb")
 [node name="white_layer" type="Sprite2D" parent="."]
 visible = false
 modulate = Color(1, 1, 1, 0.305882)
-texture = ExtResource("3_1d2h1")
+texture = ExtResource("3_yey0o")
 
 [connection signal="input_event" from="Sprite2D/Area2D" to="." method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="Sprite2D/Area2D" to="." method="_on_area_2d_mouse_entered"]

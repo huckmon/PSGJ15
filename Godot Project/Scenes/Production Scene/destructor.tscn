@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://6jhv3d72lvo6"]
+
+[ext_resource type="Texture2D" uid="uid://3lp4nrmwsjmn" path="res://Art/destructor_test.png" id="1_fjy5i"]
+[ext_resource type="Script" path="res://Scenes/Production Scene/destructor.gd" id="1_kw6o1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4q6rg"]
+size = Vector2(124, 124)
+
+[node name="destructor" type="Node2D"]
+script = ExtResource("1_kw6o1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_fjy5i")
+
+[node name="destructor" type="Area2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/destructor"]
+shape = SubResource("RectangleShape2D_4q6rg")
+
+[connection signal="body_shape_entered" from="Sprite2D/destructor" to="." method="_on_area_2d_body_shape_entered"]

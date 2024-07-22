@@ -1,17 +1,17 @@
 [gd_scene load_steps=4 format=3 uid="uid://bx1lwnp86gbo2"]
 
-[ext_resource type="Script" path="res://Scenes/Production Scene/knife_utensil.gd" id="1_245tk"]
-[ext_resource type="Texture2D" uid="uid://p744m2qa3b84" path="res://Art/knife_utensil_test.png" id="2_gyvg4"]
+[ext_resource type="Script" path="res://Scenes/Production Scene/Utensils/knife_utensil.gd" id="1_y0ckn"]
+[ext_resource type="Texture2D" uid="uid://p744m2qa3b84" path="res://Art/knife_utensil_test.png" id="2_j7key"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2r0w4"]
 radius = 50.0
 
 [node name="knife_utensil" type="Node2D"]
 scale = Vector2(1.2, 1.2)
-script = ExtResource("1_245tk")
+script = ExtResource("1_y0ckn")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_gyvg4")
+texture = ExtResource("2_j7key")
 
 [node name="Area2D" type="Area2D" parent="Sprite2D"]
 
