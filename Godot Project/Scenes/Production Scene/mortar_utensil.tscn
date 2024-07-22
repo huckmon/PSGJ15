@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bkwky22sm8mq7"]
 
-[ext_resource type="Script" path="res://Scripts/mortar_utensil.gd" id="1_ix62x"]
+[ext_resource type="Script" path="res://Scenes/Production Scene/mortar_utensil.gd" id="1_ix62x"]
 [ext_resource type="Texture2D" uid="uid://ch3lha13m2iqb" path="res://Art/bowl_test.png" id="2_ms6et"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jkrj8"]

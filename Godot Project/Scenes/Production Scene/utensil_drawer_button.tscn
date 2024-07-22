@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://p833h2bar0ef"]
 
-[ext_resource type="Script" path="res://Scripts/utensil_drawer_button.gd" id="1_hfpil"]
+[ext_resource type="Script" path="res://Scenes/Production Scene/utensil_drawer_button.gd" id="1_hfpil"]
 [ext_resource type="Texture2D" uid="uid://ccavkkk5now0w" path="res://Art/utensil_button_test.png" id="2_26j8g"]
 [ext_resource type="Texture2D" uid="uid://bgxpp1s1tb7mj" path="res://Art/white_layer_drawer_button.png" id="3_a6r5o"]
 

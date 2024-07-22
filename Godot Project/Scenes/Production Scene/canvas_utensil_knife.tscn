@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://b0dk7i323avv5"]
 
-[ext_resource type="Script" path="res://Scripts/canvas_utensil_template.gd" id="1_2tknn"]
+[ext_resource type="Script" path="res://Scenes/Production Scene/canvas_utensil_template.gd" id="1_2tknn"]
 [ext_resource type="Texture2D" uid="uid://p744m2qa3b84" path="res://Art/knife_utensil_test.png" id="1_mn7q5"]
 [ext_resource type="Texture2D" uid="uid://d3pxmc8yfj8tp" path="res://Art/white_layer.png" id="3_1d2h1"]
 
