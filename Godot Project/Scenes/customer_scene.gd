@@ -10,11 +10,8 @@ extends Node
 func _ready():
 	$"Customer Generator".generate_customer()
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+# There used to be a _process() function here. He has been removed due to lack of use. We can return him eventually if we need to.
 
 
-func _on_customer_generator_customer_type(name):
-	print(name)
+func _on_customer_generator_customer_type(identity):
+	print(identity)
