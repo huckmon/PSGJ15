@@ -1,0 +1,157 @@
+[gd_scene load_steps=2 format=3 uid="uid://b4i7pkjlsnu06"]
+
+[ext_resource type="Texture2D" uid="uid://d3ppr47bq63r" path="res://Art/drawer_test.png" id="1_kpa53"]
+
+[node name="drawer_inventory_test" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -350.0
+offset_right = 256.0
+offset_bottom = 350.0
+grow_vertical = 2
+texture = ExtResource("1_kpa53")
+
+[node name="MarginContainer" type="MarginContainer" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = -15.0
+offset_top = -20.0
+offset_right = 73.0
+offset_bottom = 68.0
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NinePatchRect/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="NinePatchRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="NinePatchRect/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="NinePatchRect/MarginContainer/VBoxContainer/HBoxContainer/ScrollContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 17
+theme_override_constants/v_separation = 20
+columns = 2
+
+[node name="Box1" type="TextureRect" parent="NinePatchRect/MarginContainer/VBoxContainer/HBoxContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(95, 95)
+layout_mode = 2
+
+[node name="icon" type="TextureRect" parent="NinePatchRect/MarginContainer/VBoxContainer/HBoxContainer/ScrollContainer/GridContainer/Box1"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Box2" type="TextureRect" parent="NinePatchRect/MarginContainer/VBoxContainer/HBoxContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(95, 95)
+layout_mode = 2
+
+[node name="icon" type="TextureRect" parent="NinePatchRect/MarginContainer/VBoxContainer/HBoxContainer/ScrollContainer/GridContainer/Box2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Box3" type="TextureRect" parent="NinePatchRect/MarginContainer/VBoxContainer/HBoxContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(95, 95)
+layout_mode = 2
+
+[node name="icon" type="TextureRect" parent="NinePatchRect/MarginContainer/VBoxContainer/HBoxContainer/ScrollContainer/GridContainer/Box3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Box4" type="TextureRect" parent="NinePatchRect/MarginContainer/VBoxContainer/HBoxContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(95, 95)
+layout_mode = 2
+
+[node name="icon" type="TextureRect" parent="NinePatchRect/MarginContainer/VBoxContainer/HBoxContainer/ScrollContainer/GridContainer/Box4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Box5" type="TextureRect" parent="NinePatchRect/MarginContainer/VBoxContainer/HBoxContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(95, 95)
+layout_mode = 2
+
+[node name="icon" type="TextureRect" parent="NinePatchRect/MarginContainer/VBoxContainer/HBoxContainer/ScrollContainer/GridContainer/Box5"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Box6" type="TextureRect" parent="NinePatchRect/MarginContainer/VBoxContainer/HBoxContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(95, 95)
+layout_mode = 2
+
+[node name="icon" type="TextureRect" parent="NinePatchRect/MarginContainer/VBoxContainer/HBoxContainer/ScrollContainer/GridContainer/Box6"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Box7" type="TextureRect" parent="NinePatchRect/MarginContainer/VBoxContainer/HBoxContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(95, 95)
+layout_mode = 2
+
+[node name="icon" type="TextureRect" parent="NinePatchRect/MarginContainer/VBoxContainer/HBoxContainer/ScrollContainer/GridContainer/Box7"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Box8" type="TextureRect" parent="NinePatchRect/MarginContainer/VBoxContainer/HBoxContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(95, 95)
+layout_mode = 2
+
+[node name="icon" type="TextureRect" parent="NinePatchRect/MarginContainer/VBoxContainer/HBoxContainer/ScrollContainer/GridContainer/Box8"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Box9" type="TextureRect" parent="NinePatchRect/MarginContainer/VBoxContainer/HBoxContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(95, 95)
+layout_mode = 2
+
+[node name="icon" type="TextureRect" parent="NinePatchRect/MarginContainer/VBoxContainer/HBoxContainer/ScrollContainer/GridContainer/Box9"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Box10" type="TextureRect" parent="NinePatchRect/MarginContainer/VBoxContainer/HBoxContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(95, 95)
+layout_mode = 2
+
+[node name="icon" type="TextureRect" parent="NinePatchRect/MarginContainer/VBoxContainer/HBoxContainer/ScrollContainer/GridContainer/Box10"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Box11" type="TextureRect" parent="NinePatchRect/MarginContainer/VBoxContainer/HBoxContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(95, 95)
+layout_mode = 2
+
+[node name="icon" type="TextureRect" parent="NinePatchRect/MarginContainer/VBoxContainer/HBoxContainer/ScrollContainer/GridContainer/Box11"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Box12" type="TextureRect" parent="NinePatchRect/MarginContainer/VBoxContainer/HBoxContainer/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(95, 95)
+layout_mode = 2
+
+[node name="icon" type="TextureRect" parent="NinePatchRect/MarginContainer/VBoxContainer/HBoxContainer/ScrollContainer/GridContainer/Box12"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0

@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://cxijyiohpsxox"]
+
+[ext_resource type="Script" path="res://Scenes/production_scene.gd" id="1_wb2lw"]
+[ext_resource type="PackedScene" uid="uid://p833h2bar0ef" path="res://Objects/utensil_drawer_button.tscn" id="2_4gk1b"]
+[ext_resource type="Texture2D" uid="uid://dolqe1m03hiqm" path="res://Art/test_background.png" id="2_ymmpi"]
+[ext_resource type="PackedScene" uid="uid://dards2t3hpsk3" path="res://Objects/utensils_drawer.tscn" id="4_wgth3"]
+
+[node name="production_scene" type="Node2D"]
+script = ExtResource("1_wb2lw")
+
+[node name="background" type="Sprite2D" parent="."]
+z_index = -1
+texture = ExtResource("2_ymmpi")
+offset = Vector2(640, 360)
+
+[node name="utensils_drawer" parent="." instance=ExtResource("4_wgth3")]
+
+[node name="utensil_drawer_button" parent="." instance=ExtResource("2_4gk1b")]
+offset_left = 1152.0
+offset_top = 64.0
+offset_right = 1152.0
+offset_bottom = 64.0
+
+[connection signal="spawn_knife_drawer" from="utensils_drawer" to="." method="_on_utensils_drawer_spawn_knife_drawer"]
+[connection signal="on_button_press" from="utensil_drawer_button" to="." method="_on_utensil_drawer_button_on_button_press"]
