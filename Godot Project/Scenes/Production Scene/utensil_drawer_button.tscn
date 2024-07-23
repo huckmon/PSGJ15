@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=3 uid="uid://p833h2bar0ef"]
+
+[ext_resource type="Script" path="res://Scenes/Production Scene/utensil_drawer_button.gd" id="1_hfpil"]
+[ext_resource type="Texture2D" uid="uid://ccavkkk5now0w" path="res://Art/utensil_button_test.png" id="2_26j8g"]
+[ext_resource type="Texture2D" uid="uid://bgxpp1s1tb7mj" path="res://Art/white_layer_drawer_button.png" id="3_a6r5o"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ahblg"]
+
+[node name="utensil_drawer_button" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hfpil")
+
+[node name="utensil_button_texture" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 32.0
+offset_bottom = 32.0
+texture = ExtResource("2_26j8g")
+
+[node name="activated_border" type="TextureRect" parent="."]
+visible = false
+modulate = Color(1, 1, 1, 0.2)
+layout_mode = 0
+offset_right = 32.0
+offset_bottom = 32.0
+texture = ExtResource("3_a6r5o")
+
+[node name="utensil_button" type="Button" parent="."]
+layout_mode = 0
+offset_right = 32.0
+offset_bottom = 32.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ahblg")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ahblg")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ahblg")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ahblg")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ahblg")
+
+[connection signal="pressed" from="utensil_button" to="." method="_on_utensil_button_pressed"]

@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://374iqxuwyl0t"]
+
+[ext_resource type="Texture2D" uid="uid://xcw1ny28el4v" path="res://Art/storer_test.png" id="1_bm1a3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6firk"]
+size = Vector2(70, 70)
+
+[node name="storer" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_bm1a3")
+
+[node name="storer" type="Area2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/storer"]
+shape = SubResource("RectangleShape2D_6firk")
