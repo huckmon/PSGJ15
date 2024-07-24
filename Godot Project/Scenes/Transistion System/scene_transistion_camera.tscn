@@ -1,5 +1,25 @@
-[gd_scene format=3 uid="uid://b5n028ackn4mc"]
+[gd_scene load_steps=4 format=3 uid="uid://b5n028ackn4mc"]
+
+[ext_resource type="Script" path="res://Scenes/Transistion System/scene_transistion_camera.gd" id="1_umsmy"]
+[ext_resource type="PackedScene" uid="uid://qpe3d3d5t3ha" path="res://Scenes/Transistion System/prod_to_sales_button.tscn" id="2_xdufb"]
+[ext_resource type="PackedScene" uid="uid://mhxh2iawbxf5" path="res://Scenes/Transistion System/sales_to_prod_button.tscn" id="3_od4hk"]
 
 [node name="scene_transistion_camera" type="Node2D"]
+script = ExtResource("1_umsmy")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="sales_prod_to_button" parent="." instance=ExtResource("3_od4hk")]
+offset_left = 590.0
+offset_top = -300.0
+offset_right = 590.0
+offset_bottom = -300.0
+
+[node name="prod_to_sales_button" parent="." instance=ExtResource("2_xdufb")]
+offset_left = -640.0
+offset_top = -300.0
+offset_right = -640.0
+offset_bottom = -300.0
+
+[connection signal="sales_to_prod_button" from="sales_prod_to_button" to="." method="_on_sales_prod_to_button_sales_to_prod_button"]
+[connection signal="prod_to_sales_button" from="prod_to_sales_button" to="." method="_on_prod_to_sales_button_prod_to_sales_button"]

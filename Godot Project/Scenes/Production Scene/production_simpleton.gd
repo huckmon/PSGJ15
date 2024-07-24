@@ -11,4 +11,4 @@ var canvas_blue_potion_globalpos
 
 var production_scene_globalpos # might be useless bc the node is at 0,0
 var sales_scene_globalpos # same as above comment
-
+var camera_globalpos #desired position of camera
