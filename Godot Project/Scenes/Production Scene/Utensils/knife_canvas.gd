@@ -27,8 +27,7 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 		ProductionSimpleton.canvas_knife_globalpos = global_position
 		knife_out = true # sets the value of knife_out to null
 		spawn_knife.emit() # sends a signal to spawn a knife to the production_scene
-		print("knife spawned")
-		print(global_position)
+		print("knife spawned "+str(global_position))
 		
 	else:
 		pass #knife has already been spawned so pass

@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://b2ahbrnswoso5"]
+
+[ext_resource type="Script" path="res://Scenes/Production Scene/Potions/potion_blue_canvas.gd" id="1_t2ojk"]
+[ext_resource type="Texture2D" uid="uid://bp8nekdsqqlht" path="res://Art/potion_blue_test.png" id="2_u5q1o"]
+[ext_resource type="Texture2D" uid="uid://d3pxmc8yfj8tp" path="res://Art/white_layer.png" id="3_1cbwt"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ri647"]
+radius = 60.0
+
+[node name="potion_blue_canvas" type="Node2D"]
+script = ExtResource("1_t2ojk")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_u5q1o")
+
+[node name="Area2D" type="Area2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D"]
+shape = SubResource("CircleShape2D_ri647")
+
+[node name="white_layer" type="Sprite2D" parent="."]
+visible = false
+modulate = Color(1, 1, 1, 0.305882)
+texture = ExtResource("3_1cbwt")
+
+[connection signal="input_event" from="Sprite2D/Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="Sprite2D/Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Sprite2D/Area2D" to="." method="_on_area_2d_mouse_exited"]

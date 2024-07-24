@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dt7takb6hsdrv" path="res://Art/drawer_test3.png" id="2_ov0f1"]
 [ext_resource type="PackedScene" uid="uid://b0dk7i323avv5" path="res://Scenes/Production Scene/Utensils/Knife_canvas.tscn" id="3_or2vq"]
 [ext_resource type="PackedScene" uid="uid://re21twne6clr" path="res://Scenes/Production Scene/Potions/potion_red_canvas.tscn" id="4_blxu3"]
-[ext_resource type="PackedScene" uid="uid://b2ahbrnswoso5" path="res://Scenes/Production Scene/Potions/blue_potion_canvas.tscn" id="5_cdv71"]
+[ext_resource type="PackedScene" uid="uid://b2ahbrnswoso5" path="res://Scenes/Production Scene/Potions/potion_blue_canvas.tscn" id="5_6gko5"]
 
 [node name="drawer" type="Node2D"]
 script = ExtResource("1_idw68")
@@ -19,8 +19,9 @@ position = Vector2(90, 110)
 [node name="potion_red_canvas" parent="." instance=ExtResource("4_blxu3")]
 position = Vector2(90, 250)
 
-[node name="blue_potion_canvas" parent="." instance=ExtResource("5_cdv71")]
+[node name="potion_blue_canvas" parent="." instance=ExtResource("5_6gko5")]
 position = Vector2(90, 390)
 
 [connection signal="spawn_knife" from="knife_canvas" to="." method="_on_canvas_utensil_knife_spawn_knife"]
 [connection signal="spawn_red_potion" from="potion_red_canvas" to="." method="_on_potion_red_canvas_spawn_red_potion"]
+[connection signal="spawn_blue_potion" from="potion_blue_canvas" to="." method="_on_potion_blue_canvas_spawn_blue_potion"]

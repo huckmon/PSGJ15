@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7brnfq3ur83k"]
+
+[ext_resource type="Texture2D" uid="uid://trbwgpjum5r8" path="res://Art/transition_test_background_1.png" id="1_4vv0j"]
+
+[node name="transistion_test_bg_1" type="Node2D"]
+
+[node name="background" type="Sprite2D" parent="."]
+z_index = -1
+texture = ExtResource("1_4vv0j")
+offset = Vector2(640, 360)
