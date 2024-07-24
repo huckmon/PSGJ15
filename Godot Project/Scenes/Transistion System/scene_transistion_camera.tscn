@@ -9,7 +9,7 @@ script = ExtResource("1_umsmy")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
-[node name="sales_prod_to_button" parent="." instance=ExtResource("3_od4hk")]
+[node name="sales_to_prod_button" parent="." instance=ExtResource("3_od4hk")]
 offset_left = 590.0
 offset_top = -300.0
 offset_right = 590.0
@@ -21,5 +21,5 @@ offset_top = -300.0
 offset_right = -640.0
 offset_bottom = -300.0
 
-[connection signal="sales_to_prod_button" from="sales_prod_to_button" to="." method="_on_sales_prod_to_button_sales_to_prod_button"]
+[connection signal="sales_to_prod_button" from="sales_to_prod_button" to="." method="_on_sales_to_prod_button_sales_to_prod_button"]
 [connection signal="prod_to_sales_button" from="prod_to_sales_button" to="." method="_on_prod_to_sales_button_prod_to_sales_button"]
