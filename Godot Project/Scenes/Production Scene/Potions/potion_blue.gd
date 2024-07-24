@@ -24,8 +24,8 @@ func _on_area_2d_area_entered(area): # function destroys the red_potion if it's 
 	# this can probably be achieved by using the on_area2d_entered to store a bool instead of destroying them on entry, then calling function to check if !selected and on_destructor = true
 	
 	if area.name == "destructor": # if the destructor is touching, delete this
-		print("red potion deleted")
+		print("blue potion deleted")
 		queue_free()
 	elif area.name == "storer": # destroys if touching storer
-		print("red potion stored - or at least pretend it is")
+		print("blue potion stored - or at least pretend it is")
 		queue_free()

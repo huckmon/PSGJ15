@@ -29,6 +29,7 @@ position = Vector2(1201, 646)
 [node name="storer" parent="." instance=ExtResource("6_0n1vi")]
 position = Vector2(1199, 394)
 
-[connection signal="spawn_knife_drawer" from="drawer" to="." method="_on_utensils_drawer_spawn_knife_drawer"]
-[connection signal="spawn_red_potion_drawer" from="drawer" to="." method="_on_utensils_drawer_spawn_red_potion_drawer"]
+[connection signal="spawn_blue_potion_drawer" from="drawer" to="." method="_on_drawer_spawn_blue_potion_drawer"]
+[connection signal="spawn_knife_drawer" from="drawer" to="." method="_on_drawer_spawn_knife_drawer"]
+[connection signal="spawn_red_potion_drawer" from="drawer" to="." method="_on_drawer_spawn_red_potion_drawer"]
 [connection signal="on_button_press" from="utensil_drawer_button" to="." method="_on_utensil_drawer_button_on_button_press"]

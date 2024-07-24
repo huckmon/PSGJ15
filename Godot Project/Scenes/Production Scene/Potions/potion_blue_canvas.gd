@@ -1,6 +1,6 @@
 extends Node2D
 
-signal spawn_red_potion # signal is used to send a signal up to the production scene to spawn a coresponding utensil
+signal spawn_blue_potion # signal is used to send a signal up to the production scene to spawn a coresponding utensil
 
 # This script needs to spawn a utensil of a desired type when the player clicks on it
 
@@ -21,9 +21,10 @@ func _on_area_2d_mouse_exited(): # detects if mouse stops hovering over area2d
 func _on_area_2d_input_event(viewport, event, shape_idx):
 	# Function detects when the mouse is clicked on the collision2d collider attached to the area2d module
 	if Input.is_action_just_pressed("Click"):
-		ProductionSimpleton.canvas_red_potion_globalpos = global_position
-		spawn_red_potion.emit() # sends a signal to spawn a knife to the production_scene
-		print("red pot spawned "+str(global_position))
+		ProductionSimpleton.canvas_blue_potion_globalpos = global_position
+		spawn_blue_potion.emit() # sends a signal to spawn a knife to the production_scene
+		print("blue pot spawned "+str(global_position))
+		print(global_position)
 	else:
 		pass #knife has already been spawned so pass
 

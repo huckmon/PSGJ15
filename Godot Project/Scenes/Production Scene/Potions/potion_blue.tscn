@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://dymqorpjog38n"]
+
+[ext_resource type="Script" path="res://Scenes/Production Scene/Potions/potion_blue.gd" id="1_2fw85"]
+[ext_resource type="Texture2D" uid="uid://bp8nekdsqqlht" path="res://Art/potion_blue_test.png" id="2_pu60v"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nypq8"]
+radius = 50.0
+
+[node name="potion_blue" type="Node2D"]
+scale = Vector2(1.2, 1.2)
+script = ExtResource("1_2fw85")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_pu60v")
+
+[node name="Area2D" type="Area2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D"]
+scale = Vector2(1.2, 1.2)
+shape = SubResource("CircleShape2D_nypq8")
+
+[connection signal="area_entered" from="Sprite2D/Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="input_event" from="Sprite2D/Area2D" to="." method="_on_area_2d_input_event"]
