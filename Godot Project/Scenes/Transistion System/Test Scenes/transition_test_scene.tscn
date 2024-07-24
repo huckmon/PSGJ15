@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://bqvgykjfsc6cp"]
+
+[ext_resource type="PackedScene" uid="uid://c7brnfq3ur83k" path="res://Scenes/Transistion System/Test Scenes/transistion_test_bg_1.tscn" id="1_gexv0"]
+[ext_resource type="PackedScene" uid="uid://do58x5oqiotvj" path="res://Scenes/Transistion System/Test Scenes/transistion_test_bg_2.tscn" id="2_ch7ws"]
+[ext_resource type="PackedScene" uid="uid://b5n028ackn4mc" path="res://Scenes/Transistion System/scene_transistion_camera.tscn" id="3_eqcsy"]
+
+[node name="transition_test_scene" type="Node2D"]
+
+[node name="transistion_test_bg_1" parent="." instance=ExtResource("1_gexv0")]
+
+[node name="transistion_test_bg_2" parent="." instance=ExtResource("2_ch7ws")]
+position = Vector2(1280, 0)
+
+[node name="scene_transistion_camera" parent="." instance=ExtResource("3_eqcsy")]
+position = Vector2(640, 360)
