@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://1l0ro3tprxe7"]
+
+[ext_resource type="Script" path="res://Scenes/Start Menu/start_menu_scene.gd" id="1_11cfp"]
+
+[node name="start_menu_scene" type="Node2D"]
+script = ExtResource("1_11cfp")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Title" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 640.0
+offset_top = 360.0
+offset_right = 830.0
+offset_bottom = 383.0
+text = "GUILTY BY ASSOCIATION"
+
+[node name="start_button" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 630.0
+offset_top = 450.0
+offset_right = 676.0
+offset_bottom = 481.0
+text = "Start"
+
+[connection signal="pressed" from="Control/start_button" to="." method="_on_start_button_pressed"]
