@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dnvkveiniw5yx"]
 
-[ext_resource type="Script" path="res://Scenes/barter_system.gd" id="1_h3iys"]
+[ext_resource type="Script" path="res://Scenes/Barter System/barter_system.gd" id="1_h3iys"]
 
 [node name="Barter System" type="Node"]
 script = ExtResource("1_h3iys")

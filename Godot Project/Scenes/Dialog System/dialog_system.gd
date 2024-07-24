@@ -26,13 +26,14 @@ func _ready():
 # hide everything. This is all awful implementation, and will likely be replaced, should we keep working on this post gamejam
 func display_Line(character, line):
 	$PanelContainer/RichTextLabel.clear() # Clear
+	show()
 	
 	# if there's no more text, then we hide the whole dialog system
 	if character == null or line == null:
 		hide()
 		return
 	
-	
+	print(character[line])
 	$PanelContainer/RichTextLabel.append_text(character[line])
 
 # Dummy function to demonstrate the flow from a character's first appearance to display dialogue.
@@ -55,6 +56,7 @@ func _input(event):
 # update: I changed it from being called "name" to being called "identity" :^)
 # this was mostly done so i could get godot to stop complaining that i was shadowing a class property
 func _on_customer_generator_customer_type(identity):
+	print('it gets the cast')
 	curChar = dialDict[identity[0]]
 	lineList = curChar.keys()
 	show()
