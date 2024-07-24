@@ -2,7 +2,7 @@ extends Node
 
 # Resource used for the character gen stuff
 @export var custTypes : Resource
-signal CustomerType(name: Array)
+signal CustomerType(identity: Array)
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
