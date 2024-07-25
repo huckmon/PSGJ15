@@ -18,17 +18,16 @@ func _on_area_2d_mouse_exited(): # detects if mouse stops hovering over area2d
 	mouse_hovering = false
 	print("not hover")
 
-func _on_area_2d_input_event(viewport, event, shape_idx):
+func _on_area_2d_input_event(_viewport, _event, _shape_idx):
 	# Function detects when the mouse is clicked on the collision2d collider attached to the area2d module
 	if Input.is_action_just_pressed("Click"):
 		ProductionSimpleton.canvas_blue_potion_globalpos = global_position
 		spawn_blue_potion.emit() # sends a signal to spawn a knife to the production_scene
 		print("blue pot spawned "+str(global_position))
-		print(global_position)
 	else:
 		pass #knife has already been spawned so pass
 
-func _physics_process(delta): 
+func _physics_process(_delta):
 	# physics process checks if mouse_hovering is active or not to activate the white layer in order to indicate to player
 	if mouse_hovering: #if the mouse is hovering over the area2d and the knife is NOT out, make white layer visable
 		white_layer.visible = true

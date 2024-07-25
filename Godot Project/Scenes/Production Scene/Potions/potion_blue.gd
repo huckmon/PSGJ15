@@ -4,7 +4,7 @@ extends Node2D
 
 var selected = true # selected stores when the mouse is being held to drag the object
 
-func _on_area_2d_input_event(viewport, event, shape_idx):
+func _on_area_2d_input_event(_viewport, _event, _shape_idx):
 	
 	# Function detects when the mouse is clicked on the collision2d collider attached to the area2d module
 	if Input.is_action_just_pressed("Click"):
