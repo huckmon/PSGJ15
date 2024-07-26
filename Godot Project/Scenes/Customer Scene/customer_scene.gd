@@ -13,5 +13,6 @@ func _ready():
 # There used to be a _process() function here. He has been removed due to lack of use. We can return him eventually if we need to.
 
 
+
 func _on_customer_generator_customer_type(identity):
-	print(identity)
+	$"Dialog System".Customer_received(identity)

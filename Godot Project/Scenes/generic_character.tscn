@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://tthp0imujwuv"]
+
+[ext_resource type="Script" path="res://Generic Character.gd" id="1_q3xkb"]
+[ext_resource type="Texture2D" uid="uid://brsgca3npuvh7" path="res://Art/assassin_test.png" id="2_kayjp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i7q5n"]
+size = Vector2(128, 256)
+
+[node name="Generic Character" type="Node2D"]
+script = ExtResource("1_q3xkb")
+profSprite = ExtResource("2_kayjp")
+
+[node name="Profession Sprite" type="Sprite2D" parent="."]
+
+[node name="Race Sprite" type="Sprite2D" parent="."]
+offset = Vector2(0, 128)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 64)
+shape = SubResource("RectangleShape2D_i7q5n")
+
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]

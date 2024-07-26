@@ -47,15 +47,11 @@ func _on_character_name_received(charName):
 
 # Input to actually drive the dialogue forward...
 func _input(event):
-	if event.is_action_pressed("ui_accept"):
+	if event.is_action_pressed("ui_accept") || event.is_action_pressed("Click"):
 		display_Line(curChar, lineList.pop_front())
 
 # The actual function for receiving a character's details
-# Given how this is designed, we can in future actually change from giving just a "name", (which is actually an array of race + profession
-# , I don't know why i called it "name") to giving a full slew of greater details.
-# update: I changed it from being called "name" to being called "identity" :^)
-# this was mostly done so i could get godot to stop complaining that i was shadowing a class property
-func _on_customer_generator_customer_type(identity):
+func Customer_received(identity):
 	#print('it gets the cast')
 	curChar = dialDict[identity[0]]
 	lineList = curChar.keys()

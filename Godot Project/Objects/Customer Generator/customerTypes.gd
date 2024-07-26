@@ -6,6 +6,9 @@ extends Resource
 # NOTE TODO: integrate the item ID system with everything
 # NOTE TODO: find more things to do :^)
 
+enum Item_ID_List {
+	Tarro
+}
 
 # Dictionary of professions; profession names are keys to a corresponding image to be used as a shprite
 const profession: Dictionary = {
@@ -31,7 +34,7 @@ const race: Array = [
 
 # Array of inventory items... (maybe do an ENUM for items; get a global itemID system using that)
 const item: Array = [
-	
+	Item_ID_List.Tarro # Tarro is our fundamental unit of currency, so...
 ]
 
 # Array of requested items...
