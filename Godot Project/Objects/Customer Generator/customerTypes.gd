@@ -7,15 +7,15 @@ extends Resource
 # NOTE TODO: find more things to do :^)
 
 
-# Array of all professions...
-const profession: Array = [
-	"UnderCoverGuard",
-	"Assassin",
-	"Noble",
-	"DarkMage",
-	"Minion",
-	"Goon"
-	]
+# Dictionary of professions; profession names are keys to a corresponding image to be used as a shprite
+const profession: Dictionary = {
+	"UnderCoverGuard" : "res://Art/undercoverguard_test.png",
+	"Assassin" : "res://Art/assassin_test.png",
+	"Noble" : "res://Art/noble_test.png",
+	"DarkMage" : "res://Art/darkmage_test.png",
+	"Minion" : "res://Art/minion_test.png",
+	"Goon" : "res://Art/goon_test.png"
+	}
 
 # Array of all races...
 const race: Array = [
@@ -29,7 +29,7 @@ const race: Array = [
 	"Dwarf"
 ]
 
-# Array of inventory items...
+# Array of inventory items... (maybe do an ENUM for items; get a global itemID system using that)
 const item: Array = [
 	
 ]

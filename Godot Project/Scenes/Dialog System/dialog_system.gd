@@ -56,7 +56,7 @@ func _input(event):
 # update: I changed it from being called "name" to being called "identity" :^)
 # this was mostly done so i could get godot to stop complaining that i was shadowing a class property
 func _on_customer_generator_customer_type(identity):
-	print('it gets the cast')
+	#print('it gets the cast')
 	curChar = dialDict[identity[0]]
 	lineList = curChar.keys()
 	show()

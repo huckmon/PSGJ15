@@ -7,14 +7,14 @@ signal CustomerType(identity: Array)
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass
-	#print(generate_customer())
+	print(custTypes.profession.keys())
 
 # function to actually generate the characters
 # For now, any race can have any profession. Racism comes after MVP
 func generate_customer():
 	var profNum: int = randi() % len(custTypes.profession)
 	var raceNum: int = randi() % len(custTypes.race)
-	var selectedProf: String = custTypes.profession[profNum]
+	var selectedProf: String = custTypes.profession.keys()[profNum]
 	var selectedRace: String = custTypes.race[raceNum]
 	CustomerType.emit([selectedProf, selectedRace])
 	# Below is debug; used for testing the scene on its own, but in practice we don't want to actually return anything, strictly;

@@ -11,5 +11,5 @@ script = ExtResource("1_4urts")
 
 [node name="Customer Generator" parent="." instance=ExtResource("1_c8aai")]
 
-[connection signal="CustomerType" from="Customer Generator" to="Dialog System" method="_on_customer_generator_customer_type"]
 [connection signal="CustomerType" from="Customer Generator" to="." method="_on_customer_generator_customer_type"]
+[connection signal="CustomerType" from="Customer Generator" to="Dialog System" method="_on_customer_generator_customer_type"]
