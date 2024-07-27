@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://btxh4wtsinhg2"]
+
+[ext_resource type="Script" path="res://Scenes/Production Scene/components/m_icon_area_2d_component.gd" id="1_0i7pb"]
+
+[node name="m_icon_area2d_component" type="Area2D"]
+script = ExtResource("1_0i7pb")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
