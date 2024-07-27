@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://cxijyiohpsxox"]
+[gd_scene load_steps=7 format=3 uid="uid://cxijyiohpsxox"]
 
 [ext_resource type="Script" path="res://Scenes/Production Scene/production_scene.gd" id="1_ppnuj"]
 [ext_resource type="Texture2D" uid="uid://dolqe1m03hiqm" path="res://Art/test_background.png" id="2_hqlpj"]
+[ext_resource type="Texture2D" uid="uid://2fpaby1ctas2" path="res://Art/prod_table_test.png_2.png" id="3_6cogj"]
 [ext_resource type="PackedScene" uid="uid://dards2t3hpsk3" path="res://Scenes/Production Scene/drawer_tools.tscn" id="3_12tai"]
+[ext_resource type="PackedScene" uid="uid://dht5ep8uk2rfb" path="res://Scenes/Production Scene/drawer_ingredients.tscn" id="5_vphmt"]
+[ext_resource type="PackedScene" uid="uid://dfsx8deb5tbw1" path="res://Scenes/Production Scene/drawer_completed_items.tscn" id="6_yl5md"]
 
 [node name="production_scene" type="Node2D"]
 script = ExtResource("1_ppnuj")
@@ -12,4 +15,12 @@ z_index = -1
 texture = ExtResource("2_hqlpj")
 offset = Vector2(640, 360)
 
+[node name="production_table" type="Sprite2D" parent="."]
+texture = ExtResource("3_6cogj")
+offset = Vector2(640, 360)
+
 [node name="drawer_tools" parent="." instance=ExtResource("3_12tai")]
+
+[node name="drawer_ingredients" parent="." instance=ExtResource("5_vphmt")]
+
+[node name="drawer_completed_items" parent="." instance=ExtResource("6_yl5md")]

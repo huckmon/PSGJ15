@@ -10,7 +10,7 @@
 script = ExtResource("1_idw68")
 
 [node name="drawer_sprite" type="Sprite2D" parent="."]
-position = Vector2(90, 360)
+position = Vector2(90, 370)
 texture = ExtResource("2_ov0f1")
 
 [node name="m_icon_bowl" parent="drawer_sprite" instance=ExtResource("3_xb44d")]

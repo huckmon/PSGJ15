@@ -3,5 +3,5 @@
 [ext_resource type="Texture2D" uid="uid://dt7takb6hsdrv" path="res://Art/drawer_test3.png" id="1_chq80"]
 
 [node name="drawer_ingredients" type="Sprite2D"]
-position = Vector2(1190, 360)
+position = Vector2(1190, 370)
 texture = ExtResource("1_chq80")
