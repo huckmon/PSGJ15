@@ -15,12 +15,12 @@ var knife_out = false # variable stores if a knife has been dragged out
 
 func _on_mouse_entered():
 	mouse_hovering = true
-	print("hovering")
+	#print("hovering")
 	white_layer.change_visibility(true)
 
 func _on_mouse_exited():
 	mouse_hovering = false
-	print("not hover")
+	#print("not hover")
 	white_layer.change_visibility(false)
 	
 	
@@ -33,18 +33,3 @@ func _on_input_event(_viewport, _event, _shape_idx):
 		print("knife spawned "+str(global_position))
 	else:
 		pass #knife has already been spawned so pass
-
-
-"""
-func _physics_process(_delta): 
-	# physics process checks if mouse_hovering is active or not to activate the white layer in order to indicate to player
-	if mouse_hovering && !knife_out: #if the mouse is hovering over the area2d and the knife is NOT out, make white layer visable
-		#white_layer.visible = true
-		white_layer.change_visibility(true)
-	else: # NOTE try seeing if I can invert this to make the white layer disapear AFTER the mouse is moved once the knife is picked up
-		#white_layer.visible = false
-		white_layer.change_visibility(false)
-"""
-
-
-

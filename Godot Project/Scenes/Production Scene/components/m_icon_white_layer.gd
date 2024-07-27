@@ -1,5 +1,7 @@
 extends Sprite2D
 class_name WhiteLayer
 
-func change_visibility(bool):
-	self.visible = bool
+
+
+func change_visibility(state):
+	self.visible = state

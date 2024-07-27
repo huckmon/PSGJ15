@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dht5ep8uk2rfb"]
+
+[ext_resource type="Texture2D" uid="uid://dt7takb6hsdrv" path="res://Art/drawer_test3.png" id="1_chq80"]
+
+[node name="drawer_ingredients" type="Sprite2D"]
+position = Vector2(1190, 360)
+texture = ExtResource("1_chq80")

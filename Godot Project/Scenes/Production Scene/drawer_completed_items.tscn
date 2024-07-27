@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfsx8deb5tbw1"]
+
+[ext_resource type="Texture2D" uid="uid://dt7takb6hsdrv" path="res://Art/drawer_test3.png" id="1_1q1x1"]
+
+[node name="drawer_completed_items" type="Sprite2D"]
+position = Vector2(640, 630)
+rotation = 1.5708
+scale = Vector2(1, 1.315)
+texture = ExtResource("1_1q1x1")

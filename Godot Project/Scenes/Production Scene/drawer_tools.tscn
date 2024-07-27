@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" path="res://Scenes/Production Scene/drawer_tools.gd" id="1_idw68"]
 [ext_resource type="Texture2D" uid="uid://dt7takb6hsdrv" path="res://Art/drawer_test3.png" id="2_ov0f1"]
-[ext_resource type="PackedScene" uid="uid://b0dk7i323avv5" path="res://Scenes/Production Scene/Utensils/Knife_canvas.tscn" id="3_or2vq"]
-[ext_resource type="PackedScene" uid="uid://re21twne6clr" path="res://Scenes/Production Scene/Potions/potion_red_canvas.tscn" id="4_blxu3"]
-[ext_resource type="PackedScene" uid="uid://b2ahbrnswoso5" path="res://Scenes/Production Scene/Potions/potion_blue_canvas.tscn" id="5_6gko5"]
+[ext_resource type="PackedScene" uid="uid://dyn66m7pfd280" path="res://Scenes/Production Scene/Menu Icons/m_icon_bowl.tscn" id="3_xb44d"]
+[ext_resource type="PackedScene" uid="uid://c3t1rx5ebrqb1" path="res://Scenes/Production Scene/Menu Icons/m_icon_knife.tscn" id="4_wowl4"]
+[ext_resource type="PackedScene" uid="uid://cxd1862q1ww3c" path="res://Scenes/Production Scene/Menu Icons/m_icon_pot.tscn" id="5_kbh6s"]
 
 [node name="drawer_tools" type="Node2D"]
 script = ExtResource("1_idw68")
@@ -13,17 +13,11 @@ script = ExtResource("1_idw68")
 position = Vector2(90, 360)
 texture = ExtResource("2_ov0f1")
 
-[node name="knife_canvas" parent="." instance=ExtResource("3_or2vq")]
-position = Vector2(90, 110)
+[node name="m_icon_bowl" parent="drawer_sprite" instance=ExtResource("3_xb44d")]
+position = Vector2(0, -132)
 
-[node name="potion_red_canvas" parent="." instance=ExtResource("4_blxu3")]
-visible = false
-position = Vector2(90, 250)
+[node name="m_icon_knife" parent="drawer_sprite" instance=ExtResource("4_wowl4")]
+position = Vector2(0, -260)
 
-[node name="potion_blue_canvas" parent="." instance=ExtResource("5_6gko5")]
-visible = false
-position = Vector2(90, 390)
-
-[connection signal="spawn_knife" from="knife_canvas" to="." method="_on_canvas_utensil_knife_spawn_knife"]
-[connection signal="spawn_red_potion" from="potion_red_canvas" to="." method="_on_potion_red_canvas_spawn_red_potion"]
-[connection signal="spawn_blue_potion" from="potion_blue_canvas" to="." method="_on_potion_blue_canvas_spawn_blue_potion"]
+[node name="m_icon_pot" parent="drawer_sprite" instance=ExtResource("5_kbh6s")]
+position = Vector2(0, 6)

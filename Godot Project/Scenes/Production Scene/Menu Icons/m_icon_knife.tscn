@@ -17,7 +17,3 @@ white_layer = NodePath("../m_icon_white_layer")
 shape = SubResource("CircleShape2D_4eu1v")
 
 [node name="m_icon_white_layer" parent="." instance=ExtResource("4_d0dqh")]
-modulate = Color(1, 1, 1, 0.313726)
-
-[connection signal="mouse_entered" from="m_icon_Area2D_component" to="m_icon_Area2D_component" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="m_icon_Area2D_component" to="m_icon_Area2D_component" method="_on_mouse_exited"]
