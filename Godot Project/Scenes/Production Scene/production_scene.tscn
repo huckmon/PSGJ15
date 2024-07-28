@@ -20,7 +20,10 @@ texture = ExtResource("3_6cogj")
 offset = Vector2(640, 360)
 
 [node name="drawer_tools" parent="." instance=ExtResource("3_12tai")]
+z_index = 1
 
 [node name="drawer_ingredients" parent="." instance=ExtResource("5_vphmt")]
+z_index = 1
 
 [node name="drawer_completed_items" parent="." instance=ExtResource("6_yl5md")]
+z_index = 1

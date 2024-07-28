@@ -1,7 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://dht5ep8uk2rfb"]
+[gd_scene load_steps=3 format=3 uid="uid://dht5ep8uk2rfb"]
 
 [ext_resource type="Texture2D" uid="uid://dt7takb6hsdrv" path="res://Art/drawer_test3.png" id="1_chq80"]
+[ext_resource type="PackedScene" uid="uid://dthmqf7p3fn05" path="res://Scenes/Production Scene/Menu Icons/m_icon_leek.tscn" id="2_vynsu"]
 
 [node name="drawer_ingredients" type="Sprite2D"]
 position = Vector2(1190, 370)
 texture = ExtResource("1_chq80")
+
+[node name="m_icon_leek" parent="." instance=ExtResource("2_vynsu")]
+position = Vector2(0, -260)

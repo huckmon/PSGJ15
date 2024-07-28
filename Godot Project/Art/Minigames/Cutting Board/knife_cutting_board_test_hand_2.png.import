@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://52j5c0v5xpc3"
-path="res://.godot/imported/knife_cutting_board_test_2.png-4d33e8836961401489ad2558274a35f7.ctex"
+uid="uid://66mfhts25mms"
+path="res://.godot/imported/knife_cutting_board_test_hand_2.png-2a4b4ab37e2eb46085e452a8fbe33c83.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/knife_cutting_board_test_2.png"
-dest_files=["res://.godot/imported/knife_cutting_board_test_2.png-4d33e8836961401489ad2558274a35f7.ctex"]
+source_file="res://Art/Minigames/Cutting Board/knife_cutting_board_test_hand_2.png"
+dest_files=["res://.godot/imported/knife_cutting_board_test_hand_2.png-2a4b4ab37e2eb46085e452a8fbe33c83.ctex"]
 
 [params]
 

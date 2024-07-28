@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://emmdipgu76qh"
-path="res://.godot/imported/knife_cutting_board_test.png-b6790065e278344a1309fa801d41ade5.ctex"
+uid="uid://cnqm7horssyda"
+path="res://.godot/imported/leek_cut_8.png-15d2b4b25ee16703140219f177ca4f0b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/knife_cutting_board_test.png"
-dest_files=["res://.godot/imported/knife_cutting_board_test.png-b6790065e278344a1309fa801d41ade5.ctex"]
+source_file="res://Art/Minigames/Cutting Board/leek_cut_8.png"
+dest_files=["res://.godot/imported/leek_cut_8.png-15d2b4b25ee16703140219f177ca4f0b.ctex"]
 
 [params]
 

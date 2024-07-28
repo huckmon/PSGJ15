@@ -13,10 +13,10 @@ offset_bottom = 40.0
 
 [node name="Title" type="Label" parent="Control"]
 layout_mode = 0
-offset_left = 640.0
-offset_top = 360.0
-offset_right = 830.0
-offset_bottom = 383.0
+offset_left = 560.0
+offset_top = 350.0
+offset_right = 750.0
+offset_bottom = 373.0
 text = "GUILTY BY ASSOCIATION"
 
 [node name="start_button" type="Button" parent="Control"]
