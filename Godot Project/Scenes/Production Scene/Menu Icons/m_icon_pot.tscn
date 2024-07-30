@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://cxd1862q1ww3c"]
+
+[ext_resource type="Texture2D" uid="uid://gwc3o78x7okh" path="res://Art/pot_test.png" id="1_xstt5"]
+[ext_resource type="PackedScene" uid="uid://btxh4wtsinhg2" path="res://Scenes/Production Scene/Menu Icons/Menu Icon Components/m_icon_area_2d_component.tscn" id="2_5uyhr"]
+[ext_resource type="PackedScene" uid="uid://bsw81rlsv7krq" path="res://Scenes/Production Scene/Menu Icons/Menu Icon Components/m_icon_white_layer.tscn" id="3_w4bre"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bqn5c"]
+size = Vector2(118, 100)
+
+[node name="m_icon_pot" type="Sprite2D"]
+texture = ExtResource("1_xstt5")
+
+[node name="m_icon_area2d_component" parent="." node_paths=PackedStringArray("white_layer") instance=ExtResource("2_5uyhr")]
+white_layer = NodePath("../m_icon_white_layer")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="m_icon_area2d_component"]
+position = Vector2(0, 5)
+shape = SubResource("RectangleShape2D_bqn5c")
+
+[node name="m_icon_white_layer" parent="." instance=ExtResource("3_w4bre")]

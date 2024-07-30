@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://c3t1rx5ebrqb1"]
+
+[ext_resource type="Texture2D" uid="uid://p744m2qa3b84" path="res://Art/knife_utensil_test.png" id="1_am535"]
+[ext_resource type="PackedScene" uid="uid://btxh4wtsinhg2" path="res://Scenes/Production Scene/Menu Icons/Menu Icon Components/m_icon_area_2d_component.tscn" id="2_87gj5"]
+[ext_resource type="PackedScene" uid="uid://bsw81rlsv7krq" path="res://Scenes/Production Scene/Menu Icons/Menu Icon Components/m_icon_white_layer.tscn" id="4_d0dqh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4eu1v"]
+radius = 55.0
+
+[node name="m_icon_knife" type="Sprite2D"]
+texture = ExtResource("1_am535")
+
+[node name="m_icon_Area2D_component" parent="." node_paths=PackedStringArray("white_layer") instance=ExtResource("2_87gj5")]
+white_layer = NodePath("../m_icon_white_layer")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="m_icon_Area2D_component"]
+shape = SubResource("CircleShape2D_4eu1v")
+
+[node name="m_icon_white_layer" parent="." instance=ExtResource("4_d0dqh")]

@@ -1,0 +1,71 @@
+[gd_scene load_steps=9 format=3 uid="uid://dph3mxea0lnv7"]
+
+[ext_resource type="Script" path="res://Scenes/Production Scene/Mini Games/minigame_knife.gd" id="1_5827t"]
+[ext_resource type="Texture2D" uid="uid://t4dnf2kc1fke" path="res://Art/Minigames/Cutting Board/cutting_board_test_3.png" id="1_q8hjc"]
+[ext_resource type="Texture2D" uid="uid://80lft4vc20v4" path="res://Art/Minigames/Cutting Board/leek_test.png" id="2_o6xsj"]
+[ext_resource type="Texture2D" uid="uid://dsom667hdx5c2" path="res://Art/Minigames/Cutting Board/cuttingboard_handknife.png" id="2_yt25a"]
+[ext_resource type="Texture2D" uid="uid://c4ppnyuu2sn6f" path="res://Art/Minigames/Cutting Board/cuttingboard_handknife_2.png" id="3_urgln"]
+[ext_resource type="Script" path="res://Scenes/Production Scene/Mini Games/leek.gd" id="4_k7itw"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ouod6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_urgln")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_yt25a")
+}],
+"loop": false,
+"name": &"cut",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_yt25a")
+}],
+"loop": false,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jmq17"]
+size = Vector2(105, 351)
+
+[node name="minigame_knife" type="Node2D"]
+position = Vector2(680, 340)
+script = ExtResource("1_5827t")
+
+[node name="cutting_board" type="Sprite2D" parent="."]
+texture = ExtResource("1_q8hjc")
+
+[node name="leek" type="Sprite2D" parent="."]
+texture = ExtResource("2_o6xsj")
+script = ExtResource("4_k7itw")
+
+[node name="knife_and_hand" type="Node2D" parent="."]
+
+[node name="animation1" type="Sprite2D" parent="knife_and_hand"]
+visible = false
+position = Vector2(210, 0)
+texture = ExtResource("2_yt25a")
+
+[node name="animation2" type="Sprite2D" parent="knife_and_hand"]
+visible = false
+position = Vector2(210, 0)
+texture = ExtResource("3_urgln")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="knife_and_hand"]
+position = Vector2(210, 0)
+sprite_frames = SubResource("SpriteFrames_ouod6")
+animation = &"cut"
+frame = 1
+frame_progress = 1.0
+
+[node name="Area2D" type="Area2D" parent="knife_and_hand"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="knife_and_hand/Area2D"]
+position = Vector2(198.5, 14.5)
+shape = SubResource("RectangleShape2D_jmq17")
+
+[connection signal="input_event" from="knife_and_hand/Area2D" to="." method="_on_area_2d_input_event"]

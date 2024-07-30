@@ -1,0 +1,23 @@
+[gd_scene load_steps=6 format=3 uid="uid://dards2t3hpsk3"]
+
+[ext_resource type="Script" path="res://Scenes/Production Scene/drawer_tools.gd" id="1_idw68"]
+[ext_resource type="Texture2D" uid="uid://dt7takb6hsdrv" path="res://Art/drawer_test3.png" id="2_ov0f1"]
+[ext_resource type="PackedScene" uid="uid://dyn66m7pfd280" path="res://Scenes/Production Scene/Menu Icons/m_icon_bowl.tscn" id="3_xb44d"]
+[ext_resource type="PackedScene" uid="uid://c3t1rx5ebrqb1" path="res://Scenes/Production Scene/Menu Icons/m_icon_knife.tscn" id="4_wowl4"]
+[ext_resource type="PackedScene" uid="uid://cxd1862q1ww3c" path="res://Scenes/Production Scene/Menu Icons/m_icon_pot.tscn" id="5_kbh6s"]
+
+[node name="drawer_tools" type="Node2D"]
+script = ExtResource("1_idw68")
+
+[node name="drawer_sprite" type="Sprite2D" parent="."]
+position = Vector2(90, 370)
+texture = ExtResource("2_ov0f1")
+
+[node name="m_icon_bowl" parent="drawer_sprite" instance=ExtResource("3_xb44d")]
+position = Vector2(0, -132)
+
+[node name="m_icon_knife" parent="drawer_sprite" instance=ExtResource("4_wowl4")]
+position = Vector2(0, -260)
+
+[node name="m_icon_pot" parent="drawer_sprite" instance=ExtResource("5_kbh6s")]
+position = Vector2(0, 6)

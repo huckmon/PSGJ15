@@ -1,8 +1,8 @@
 [gd_scene load_steps=9 format=3 uid="uid://mhxh2iawbxf5"]
 
 [ext_resource type="Script" path="res://Scenes/Transistion System/sales_to_prod_button.gd" id="1_c4egc"]
-[ext_resource type="Texture2D" uid="uid://dxwr3c34lbhat" path="res://Art/transition_button_test.png" id="2_d8vtu"]
-[ext_resource type="Texture2D" uid="uid://ckid0p6k0wk7t" path="res://Art/transition_button_test_alt.png" id="3_xvj7m"]
+[ext_resource type="Texture2D" uid="uid://ho3cqlkp8kan" path="res://Art/transistion_button_2.png" id="2_u5tar"]
+[ext_resource type="Texture2D" uid="uid://bqejfslisqmvc" path="res://Art/transistion_button_2_white.png" id="3_dka2f"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mabon"]
 
@@ -25,17 +25,19 @@ script = ExtResource("1_c4egc")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("2_d8vtu")
+offset_left = 32.0
+offset_right = 64.0
+offset_bottom = 32.0
+scale = Vector2(-1, 1)
+texture = ExtResource("2_u5tar")
 
 [node name="activated_texture" type="TextureRect" parent="."]
 visible = false
 modulate = Color(1, 1, 1, 0.392157)
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("3_xvj7m")
+offset_right = 32.0
+offset_bottom = 32.0
+texture = ExtResource("3_dka2f")
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0

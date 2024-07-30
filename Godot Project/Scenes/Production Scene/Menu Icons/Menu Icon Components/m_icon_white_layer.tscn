@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bsw81rlsv7krq"]
+
+[ext_resource type="Texture2D" uid="uid://d3pxmc8yfj8tp" path="res://Art/white_layer.png" id="1_4rhon"]
+[ext_resource type="Script" path="res://Scenes/Production Scene/Menu Icons/Menu Icon Components/m_icon_white_layer.gd" id="2_i51ta"]
+
+[node name="m_icon_white_layer" type="Sprite2D"]
+visible = false
+modulate = Color(1, 1, 1, 0.313726)
+texture = ExtResource("1_4rhon")
+script = ExtResource("2_i51ta")

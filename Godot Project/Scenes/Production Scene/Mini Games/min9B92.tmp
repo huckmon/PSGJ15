@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://comp4dnreyv2o"]
+
+[ext_resource type="Texture2D" uid="uid://bkikpvlcnqe8p" path="res://Art/Minigames/Bowl/bowl_table_2.png" id="1_8n03c"]
+[ext_resource type="Script" path="res://Scenes/Production Scene/Mini Games/minigame_bowl.gd" id="1_pblub"]
+[ext_resource type="Texture2D" uid="uid://ykmjmi6r5vga" path="res://Art/Minigames/Bowl/bowl_inside.png" id="2_766yx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lhqqx"]
+radius = 150.0
+
+[node name="minigame_bowl" type="Node2D"]
+position = Vector2(600, 340)
+script = ExtResource("1_pblub")
+
+[node name="bowl" type="Sprite2D" parent="."]
+texture = ExtResource("1_8n03c")
+
+[node name="bowl_mixture" type="Sprite2D" parent="."]
+texture = ExtResource("2_766yx")
+
+[node name="Area2D" type="Area2D" parent="bowl_mixture"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bowl_mixture/Area2D"]
+shape = SubResource("CircleShape2D_lhqqx")
+
+[connection signal="input_event" from="bowl_mixture/Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="bowl_mixture/Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="bowl_mixture/Area2D" to="." method="_on_area_2d_mouse_exited"]
