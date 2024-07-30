@@ -16,13 +16,6 @@ var last_mouse_pos = Vector2(0, 0) # save last mouse pos to slowly spin down
 
 func _ready():
 	current_speed = initial_speed
-"""
-func _on_area_2d_input_event(_viewport, _event, _shape_idx):
-	if Input.is_action_just_released("Click"): # store that player is not trying to move mixture
-		selected = false
-	elif Input.is_action_just_pressed("Click") && hovering: # store that player is attempting to move mixture
-		selected = true"""
-
 
 func _on_area_2d_mouse_entered(): # store that mouse is over mixture
 	hovering = true
